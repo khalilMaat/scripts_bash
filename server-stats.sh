@@ -113,15 +113,4 @@ ps aux --sort=-%cpu | awk 'NR==1 || NR<=6 { printf "%-10s %-6s %-5s %-5s %s\n", 
 print_header "🧠 Top 5 Processes by Memory"
 ps aux --sort=-%mem | awk 'NR==1 || NR<=6 { printf "%-10s %-6s %-5s %-5s %s\n", $1, $2, $3, $4, $11 }'
 
-# top_5_processes_by_cpu=$(ps aux --sort -%cpu | head -6)
-# top_5_processes_by_memory=$(ps aux --sort -%mem | head -6)
-
-# echo "TOP 5 processes consuming CPU:"
-# printf "\n"
-# echo "$top_5_processes_by_cpu"
-
-# echo "***************************************************************************************"
-
-# echo "TOP 5 processes consuming Memory:"
-# printf "\n"
-# echo "$top_5_processes_by_memory"
+echo "Khalil Maatoug"
